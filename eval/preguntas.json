@@ -1,0 +1,50 @@
+[
+ {
+  "pregunta": "¿Cuál es el riesgo de roya esta semana?",
+  "herramienta": "get_risk"
+ },
+ {
+  "pregunta": "¿Qué temperatura se espera la próxima semana?",
+  "herramienta": "get_risk"
+ },
+ {
+  "pregunta": "Si la temperatura es media y está subiendo en julio-septiembre, ¿qué riesgo de roya hay?",
+  "herramienta": "get_risk"
+ },
+ {
+  "pregunta": "¿Cómo está el riesgo de roya si la temperatura es fresca y está bajando?",
+  "herramienta": "get_risk"
+ },
+ {
+  "pregunta": "Planea las labores de la semana con 5 jornaleros por día",
+  "herramienta": "schedule"
+ },
+ {
+  "pregunta": "Arma un calendario si se espera lluvia alta y tengo 3 jornaleros",
+  "herramienta": "schedule"
+ },
+ {
+  "pregunta": "¿Qué día me conviene fertilizar esta semana?",
+  "herramienta": "schedule"
+ },
+ {
+  "pregunta": "¿Cuándo puedo cosechar con 8 jornaleros y lluvia baja?",
+  "herramienta": "schedule"
+ },
+ {
+  "pregunta": "¿Qué es la roya del café y cómo se controla?",
+  "herramienta": "search_docs"
+ },
+ {
+  "pregunta": "¿Qué condiciones favorecen el desarrollo de la roya según los documentos?",
+  "herramienta": "search_docs"
+ },
+ {
+  "pregunta": "¿Cada cuánto se debe inspeccionar la incidencia de roya en los lotes?",
+  "herramienta": "search_docs"
+ },
+ {
+  "pregunta": "¿Qué recomienda el corpus sobre fertilización y humedad del suelo?",
+  "herramienta": "search_docs"
+ }
+]
