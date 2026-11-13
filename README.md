@@ -3,15 +3,22 @@ Red bayesiana (eliminación de variables, propia) + CSP (backtracking, propio) +
 
 ## Ejecutar
 ```bash
+python -m venv venv && venv\Scripts\activate      # Windows
 pip install -r requirements.txt
-# 1) Datos: descarga de datos.gov.co "Datos Hidrometeorológicos Crudos IDEAM" UNA estación cafetera (CSV) -> data/raw/ideam_station.csv
-#python -m src.make_demo_data
-# 2) Corpus: coloca PDFs/TXT de Cenicafé en corpus/ (borra el texto DEMO)
-# 3) LLM (API compatible OpenAI; ej. Groq gratis):
-export LLM_API_KEY=...  LLM_BASE_URL=https://api.groq.com/openai/v1  LLM_MODEL=llama-3.3-70b-versatile
-export DATA_PATH=data/raw/ideam_station.csv
-python -m src.evaluate_model        # métricas vs líneas base -> results/metricas_modelo.json
-python -m src.evaluate_agent        # 12 preguntas fijas     -> results/evaluacion_agente.csv
+```
+1. **Datos:** CSV de temperatura de la estación IDEAM en `data/raw/ideam_station.csv` (separador `;`, codificación latin-1, columnas `fecha` y `valor`). Fuente: [COMPLETAR enlace de datos.gov.co].
+2. **Corpus:** los PDFs de Cenicafé están en `corpus/` (referencias completas en el informe).
+3. **LLM (API compatible con OpenAI, p. ej. Groq).** No pongas la key en ningún archivo:
+```powershell
+$env:LLM_API_KEY="<tu key>"
+$env:LLM_BASE_URL="https://api.groq.com/openai/v1"
+$env:LLM_MODEL="openai/gpt-oss-120b"
+$env:DATA_PATH="data/raw/ideam_station.csv"
+```
+4. **Evaluación y app:**
+```bash
+python -m src.evaluate_model
+python -m src.evaluate_agent
 streamlit run app.py
 ```
 ## Método (Plan B: solo temperatura)
