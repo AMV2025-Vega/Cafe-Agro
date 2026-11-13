@@ -1,15 +1,15 @@
 {
   "red_bayesiana": {
-    "accuracy": 0.683,
-    "f1_macro": 0.64
+    "accuracy": 0.664,
+    "f1_macro": 0.62
   },
   "base_persistencia": {
-    "accuracy": 0.714,
-    "f1_macro": 0.661
+    "accuracy": 0.672,
+    "f1_macro": 0.617
   },
   "base_mayoritaria": {
-    "accuracy": 0.224,
-    "f1_macro": 0.122
+    "accuracy": 0.282,
+    "f1_macro": 0.147
   },
   "n_train": 602,
   "n_test": 259,
